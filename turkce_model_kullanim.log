@@ -1,0 +1,1278 @@
+2025-05-02 18:23:56,124 - INFO - Model yükleniyor: model_final
+2025-05-02 18:23:56,125 - ERROR - Model yüklenirken hata: Model bulunamadı: model_final
+2025-05-02 18:23:56,125 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "c:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 333, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<5 lines>...
+        do_sample=not args.no_sample
+    )
+  File "c:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 73, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 169, in _load_model_and_tokenizer
+    raise e
+  File "c:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 126, in _load_model_and_tokenizer
+    raise FileNotFoundError(f"Model bulunamadı: {self.model_path}")
+FileNotFoundError: Model bulunamadı: model_final
+2025-05-02 18:25:09,405 - INFO - Model yükleniyor: turbomodel_10gb/checkpoint_20250502_175907/model_final
+2025-05-02 18:25:11,269 - INFO - Model başarıyla yüklendi
+2025-05-02 18:25:11,269 - INFO - Cihaz: cpu
+2025-05-02 18:25:19,320 - INFO - Model yükleniyor: turbomodel_10gb/checkpoint_20250502_175907/model_final
+2025-05-02 18:25:21,160 - INFO - Model başarıyla yüklendi
+2025-05-02 18:25:21,160 - INFO - Cihaz: cpu
+2025-05-02 18:25:21,395 - ERROR - Metin üretilirken hata: index out of range in self
+2025-05-02 18:26:53,177 - INFO - Model yükleniyor: turbomodel_10gb/checkpoint_20250502_175907/model_final
+2025-05-02 18:26:57,521 - INFO - Model başarıyla yüklendi
+2025-05-02 18:26:57,521 - INFO - Cihaz: cpu
+2025-05-02 18:27:02,403 - ERROR - Metin üretilirken hata: index out of range in self
+2025-05-02 18:27:43,970 - INFO - Model yükleniyor: turbomodel_10gb/checkpoint_20250502_175907/model_final
+2025-05-02 18:27:47,974 - INFO - Model başarıyla yüklendi
+2025-05-02 18:27:47,975 - INFO - Cihaz: cpu
+2025-05-02 19:54:32,757 - INFO - Model yükleniyor: turbomodel_zeki/checkpoint_20250502_190910/model_final
+2025-05-02 19:54:37,390 - INFO - Model başarıyla yüklendi
+2025-05-02 19:54:37,390 - INFO - Cihaz: cpu
+2025-05-02 19:56:07,005 - INFO - Model yükleniyor: turbomodel_zeki/checkpoint_20250502_190910/model_final
+2025-05-02 19:56:08,690 - INFO - Model başarıyla yüklendi
+2025-05-02 19:56:08,690 - INFO - Cihaz: cpu
+2025-05-02 20:25:12,750 - INFO - Model yükleniyor: turbomodel_zeki/checkpoint_20250502_190910/model_final
+2025-05-02 20:25:16,858 - INFO - Model başarıyla yüklendi
+2025-05-02 20:25:16,858 - INFO - Cihaz: cpu
+2025-05-02 22:06:34,243 - INFO - Model yükleniyor: turbomodel_superv2\checkpoint_20250502_211355
+2025-05-02 22:06:34,244 - INFO - Tokenizer yükleniyor: turbomodel_superv2\checkpoint_20250502_211355
+2025-05-02 22:06:34,244 - ERROR - Model yüklenirken hata: Unrecognized model in turbomodel_superv2\checkpoint_20250502_211355. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-02 22:06:34,247 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 648, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<5 lines>...
+        do_sample=not args.no_sample
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 74, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 248, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 162, in _load_model_and_tokenizer
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tokenizer_path,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        trust_remote_code=False
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 966, in from_pretrained
+    config = AutoConfig.from_pretrained(
+        pretrained_model_name_or_path, trust_remote_code=trust_remote_code, **kwargs
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\configuration_auto.py", line 1151, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized model in turbomodel_superv2\checkpoint_20250502_211355. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-02 22:06:40,499 - INFO - Model yükleniyor: turbomodel_superv2
+2025-05-02 22:06:40,500 - INFO - Tokenizer yükleniyor: turbomodel_superv2
+2025-05-02 22:06:40,501 - ERROR - Model yüklenirken hata: Unrecognized model in turbomodel_superv2. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-02 22:06:40,504 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 648, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<5 lines>...
+        do_sample=not args.no_sample
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 74, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 248, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 162, in _load_model_and_tokenizer
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tokenizer_path,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        trust_remote_code=False
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 966, in from_pretrained
+    config = AutoConfig.from_pretrained(
+        pretrained_model_name_or_path, trust_remote_code=trust_remote_code, **kwargs
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\configuration_auto.py", line 1151, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized model in turbomodel_superv2. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-02 22:08:44,927 - INFO - Model yükleniyor: turbomodel_superv2
+2025-05-02 22:08:44,927 - INFO - Tokenizer yükleniyor: turbomodel_superv2
+2025-05-02 22:08:44,929 - ERROR - Model yüklenirken hata: Unrecognized model in turbomodel_superv2. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-02 22:08:44,936 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 641, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<5 lines>...
+        do_sample=not args.no_sample
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 74, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 189, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 130, in _load_model_and_tokenizer
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tokenizer_path,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        trust_remote_code=False
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 966, in from_pretrained
+    config = AutoConfig.from_pretrained(
+        pretrained_model_name_or_path, trust_remote_code=trust_remote_code, **kwargs
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\configuration_auto.py", line 1151, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized model in turbomodel_superv2. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-02 22:09:54,587 - INFO - Model yükleniyor: turbomodel_superv2\ZAI-turbo_tokenizer
+2025-05-02 22:09:54,587 - INFO - Tokenizer yükleniyor: turbomodel_superv2\ZAI-turbo_tokenizer
+2025-05-02 22:09:54,619 - INFO - Model yükleniyor: turbomodel_superv2\ZAI-turbo_tokenizer
+2025-05-02 22:09:54,620 - ERROR - Model yüklenirken hata: Unrecognized model in turbomodel_superv2\ZAI-turbo_tokenizer. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-02 22:09:54,624 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 641, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<5 lines>...
+        do_sample=not args.no_sample
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 74, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 189, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 139, in _load_model_and_tokenizer
+    self.model = AutoModelForCausalLM.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tokenizer_path,
+        ^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        trust_remote_code=False
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\auto_factory.py", line 531, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\configuration_auto.py", line 1151, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized model in turbomodel_superv2\ZAI-turbo_tokenizer. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-02 22:11:01,846 - INFO - Model yükleniyor: turbomodel_superv2
+2025-05-02 22:11:01,847 - INFO - Tokenizer yükleniyor: turbomodel_superv2
+2025-05-02 22:11:01,848 - ERROR - Model yüklenirken hata: Unrecognized model in turbomodel_superv2. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-02 22:11:01,851 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 685, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<5 lines>...
+        do_sample=not args.no_sample
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 74, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 189, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 130, in _load_model_and_tokenizer
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tokenizer_path,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        trust_remote_code=False
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 966, in from_pretrained
+    config = AutoConfig.from_pretrained(
+        pretrained_model_name_or_path, trust_remote_code=trust_remote_code, **kwargs
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\configuration_auto.py", line 1151, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized model in turbomodel_superv2. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v3, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glm4, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen3, qwen3_moe, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam_vision_model, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+2025-05-03 07:33:31,033 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 07:33:31,034 - INFO - Model yükleniyor: superv2
+2025-05-03 07:33:31,035 - INFO - Model yolu bulunamadı: superv2, alternatifler aranıyor
+2025-05-03 07:33:31,040 - INFO - SuperV2 model klasörü bulundu!
+2025-05-03 07:33:31,042 - INFO - SuperV2 model bulundu: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:33:31,126 - INFO - Tokenizer yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:33:31,228 - INFO - BOS token ayarlanıyor
+2025-05-03 07:33:31,229 - INFO - Model yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:33:31,269 - INFO - Kullanılabilir sistem belleği: 9.15 GB
+2025-05-03 07:33:37,354 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 07:33:37,355 - INFO - Model başarıyla yüklendi
+2025-05-03 07:33:37,355 - INFO - Cihaz: cpu
+2025-05-03 07:33:37,356 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 07:33:37,372 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 07:33:37,669 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 07:33:58,587 - INFO - Girdi token sayısı: 86
+2025-05-03 07:34:03,712 - ERROR - Metin üretilirken hata: index out of range in self
+2025-05-03 07:47:49,888 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 07:47:49,888 - INFO - Güvenli mod aktif: Model yükleme ve bellek optimizasyonları uygulanıyor
+2025-05-03 07:47:49,950 - INFO - Model yükleniyor: superv2
+2025-05-03 07:47:49,951 - INFO - Model yolu bulunamadı: superv2, alternatifler aranıyor
+2025-05-03 07:47:49,952 - INFO - SuperV2 model klasörü bulundu!
+2025-05-03 07:47:49,953 - INFO - SuperV2 model bulundu: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:47:50,011 - INFO - Tokenizer yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:47:50,069 - INFO - BOS token ayarlanıyor
+2025-05-03 07:47:50,070 - INFO - Model yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:47:50,138 - INFO - Kullanılabilir sistem belleği: 8.23 GB
+2025-05-03 07:47:59,794 - INFO - Model max_position_embeddings: 256
+2025-05-03 07:47:59,794 - INFO - Model n_ctx: 128
+2025-05-03 07:47:59,795 - INFO - Model n_positions: 256
+2025-05-03 07:47:59,795 - INFO - Model vocabulary size: 16000
+2025-05-03 07:47:59,795 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 07:47:59,795 - INFO - Güvenli maksimum uzunluk: 78
+2025-05-03 07:47:59,795 - INFO - Model başarıyla yüklendi
+2025-05-03 07:47:59,795 - INFO - Cihaz: cpu
+2025-05-03 07:47:59,796 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 07:47:59,798 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 07:47:59,839 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 07:48:02,838 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 07:48:02,838 - INFO - Güvenli mod aktif: Model yükleme ve bellek optimizasyonları uygulanıyor
+2025-05-03 07:48:02,894 - INFO - Model yükleniyor: superv2
+2025-05-03 07:48:02,894 - INFO - Model yolu bulunamadı: superv2, alternatifler aranıyor
+2025-05-03 07:48:02,896 - INFO - SuperV2 model klasörü bulundu!
+2025-05-03 07:48:02,897 - INFO - SuperV2 model bulundu: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:48:02,946 - INFO - Tokenizer yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:48:02,970 - INFO - BOS token ayarlanıyor
+2025-05-03 07:48:02,971 - INFO - Model yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:48:02,985 - INFO - Kullanılabilir sistem belleği: 8.17 GB
+2025-05-03 07:48:04,539 - INFO - Model max_position_embeddings: 256
+2025-05-03 07:48:04,539 - INFO - Model n_ctx: 128
+2025-05-03 07:48:04,539 - INFO - Model n_positions: 256
+2025-05-03 07:48:04,540 - INFO - Model vocabulary size: 16000
+2025-05-03 07:48:04,540 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 07:48:04,540 - INFO - Güvenli maksimum uzunluk: 78
+2025-05-03 07:48:04,540 - INFO - Model başarıyla yüklendi
+2025-05-03 07:48:04,541 - INFO - Cihaz: cpu
+2025-05-03 07:48:04,541 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 07:48:04,543 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 07:48:04,588 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 07:48:04,590 - INFO - Girdi token sayısı: 86
+2025-05-03 07:48:04,590 - INFO - Güvenli token sayısı: 64
+2025-05-03 07:48:04,733 - INFO - Üretim süresi: 0.14 saniye
+2025-05-03 07:48:31,374 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 07:48:31,375 - INFO - Model yükleniyor: superv2
+2025-05-03 07:48:31,375 - INFO - Model yolu bulunamadı: superv2, alternatifler aranıyor
+2025-05-03 07:48:31,377 - INFO - SuperV2 model klasörü bulundu!
+2025-05-03 07:48:31,378 - INFO - SuperV2 model bulundu: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:48:31,437 - INFO - Tokenizer yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:48:31,461 - INFO - BOS token ayarlanıyor
+2025-05-03 07:48:31,462 - INFO - Model yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:48:31,475 - INFO - Kullanılabilir sistem belleği: 8.50 GB
+2025-05-03 07:48:35,762 - INFO - Model max_position_embeddings: 256
+2025-05-03 07:48:35,762 - INFO - Model n_ctx: 128
+2025-05-03 07:48:35,763 - INFO - Model n_positions: 256
+2025-05-03 07:48:35,763 - INFO - Model vocabulary size: 16000
+2025-05-03 07:48:35,764 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 07:48:35,765 - INFO - Güvenli maksimum uzunluk: 78
+2025-05-03 07:48:35,766 - INFO - Model başarıyla yüklendi
+2025-05-03 07:48:35,767 - INFO - Cihaz: cpu
+2025-05-03 07:48:35,767 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 07:48:35,773 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 07:48:35,884 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 07:48:46,682 - INFO - Girdi token sayısı: 86
+2025-05-03 07:48:46,683 - INFO - Güvenli token sayısı: 100
+2025-05-03 07:48:47,250 - INFO - Üretim süresi: 0.57 saniye
+2025-05-03 07:49:11,534 - INFO - Girdi token sayısı: 128
+2025-05-03 07:49:11,534 - INFO - Güvenli token sayısı: 100
+2025-05-03 07:49:11,588 - INFO - Üretim süresi: 0.05 saniye
+2025-05-03 07:50:12,025 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 07:50:12,025 - INFO - Model yükleniyor: superv2
+2025-05-03 07:50:12,026 - INFO - Model yolu bulunamadı: superv2, alternatifler aranıyor
+2025-05-03 07:50:12,028 - INFO - SuperV2 model klasörü bulundu!
+2025-05-03 07:50:12,029 - INFO - SuperV2 model bulundu: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:50:12,078 - INFO - Tokenizer yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:50:12,102 - INFO - BOS token ayarlanıyor
+2025-05-03 07:50:12,103 - INFO - Model yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:50:12,116 - INFO - Kullanılabilir sistem belleği: 8.59 GB
+2025-05-03 07:50:15,829 - INFO - Model max_position_embeddings: 256
+2025-05-03 07:50:15,830 - INFO - Model n_ctx: 128
+2025-05-03 07:50:15,830 - INFO - Model n_positions: 256
+2025-05-03 07:50:15,830 - INFO - Model vocabulary size: 16000
+2025-05-03 07:50:15,831 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 07:50:15,831 - INFO - Güvenli maksimum uzunluk: 78
+2025-05-03 07:50:15,873 - INFO - Model başarıyla yüklendi
+2025-05-03 07:50:15,873 - INFO - Cihaz: cpu
+2025-05-03 07:50:15,873 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 07:50:15,878 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 07:50:15,986 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 07:50:21,334 - INFO - Girdi token sayısı: 86
+2025-05-03 07:50:21,335 - INFO - Güvenli token sayısı: 100
+2025-05-03 07:50:21,811 - INFO - Üretim süresi: 0.48 saniye
+2025-05-03 07:52:28,750 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 07:52:28,751 - INFO - Model yükleniyor: superv2
+2025-05-03 07:52:28,751 - INFO - Model yolu bulunamadı: superv2, alternatifler aranıyor
+2025-05-03 07:52:28,753 - INFO - SuperV2 model klasörü bulundu!
+2025-05-03 07:52:28,754 - INFO - SuperV2 model bulundu: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:52:28,809 - INFO - Tokenizer yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:52:28,832 - INFO - BOS token ayarlanıyor
+2025-05-03 07:52:28,833 - INFO - Model yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:52:28,846 - INFO - Kullanılabilir sistem belleği: 8.60 GB
+2025-05-03 07:52:32,592 - INFO - Model max_position_embeddings: 256
+2025-05-03 07:52:32,593 - INFO - Model n_ctx: 128
+2025-05-03 07:52:32,593 - INFO - Model n_positions: 256
+2025-05-03 07:52:32,594 - INFO - Model vocabulary size: 16000
+2025-05-03 07:52:32,595 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 07:52:32,595 - INFO - Güvenli maksimum uzunluk: 78
+2025-05-03 07:52:32,596 - INFO - Model başarıyla yüklendi
+2025-05-03 07:52:32,597 - INFO - Cihaz: cpu
+2025-05-03 07:52:32,598 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 07:52:32,604 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 07:52:32,713 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 07:52:35,342 - INFO - Girdi token sayısı: 7
+2025-05-03 07:52:35,342 - INFO - Güvenli token sayısı: 100
+2025-05-03 07:52:36,642 - INFO - Üretim süresi: 1.30 saniye
+2025-05-03 07:53:55,329 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 07:53:55,330 - INFO - Model yükleniyor: superv2
+2025-05-03 07:53:55,330 - INFO - Model yolu bulunamadı: superv2, alternatifler aranıyor
+2025-05-03 07:53:55,333 - INFO - SuperV2 model klasörü bulundu!
+2025-05-03 07:53:55,333 - INFO - SuperV2 model bulundu: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:53:55,382 - INFO - Tokenizer yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:53:55,405 - INFO - BOS token ayarlanıyor
+2025-05-03 07:53:55,405 - INFO - Model yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 07:53:55,417 - INFO - Kullanılabilir sistem belleği: 8.52 GB
+2025-05-03 07:53:59,020 - INFO - Model max_position_embeddings: 256
+2025-05-03 07:53:59,020 - INFO - Model n_ctx: 128
+2025-05-03 07:53:59,021 - INFO - Model n_positions: 256
+2025-05-03 07:53:59,021 - INFO - Model vocabulary size: 16000
+2025-05-03 07:53:59,021 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 07:53:59,022 - INFO - Güvenli maksimum uzunluk: 78
+2025-05-03 07:53:59,022 - INFO - Model başarıyla yüklendi
+2025-05-03 07:53:59,022 - INFO - Cihaz: cpu
+2025-05-03 07:53:59,022 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 07:53:59,028 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 07:53:59,133 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 07:54:04,057 - INFO - Standart yanıt kullanılıyor: merhaba
+2025-05-03 07:54:13,854 - INFO - Standart yanıt kullanılıyor: merhaba
+2025-05-03 08:10:35,102 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 08:10:35,103 - INFO - Model yükleniyor: superv2
+2025-05-03 08:10:35,103 - INFO - Model yolu bulunamadı: superv2, alternatifler aranıyor
+2025-05-03 08:10:35,106 - INFO - SuperV2 model klasörü bulundu!
+2025-05-03 08:10:35,107 - INFO - SuperV2 model bulundu: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 08:10:35,160 - INFO - Tokenizer yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 08:10:35,183 - INFO - BOS token ayarlanıyor
+2025-05-03 08:10:35,184 - INFO - Model yükleniyor: turbomodel_superv2\checkpoint_20250502_211355\model_final
+2025-05-03 08:10:35,195 - INFO - Kullanılabilir sistem belleği: 8.77 GB
+2025-05-03 08:10:38,981 - INFO - Model max_position_embeddings: 256
+2025-05-03 08:10:38,982 - INFO - Model n_ctx: 128
+2025-05-03 08:10:38,982 - INFO - Model n_positions: 256
+2025-05-03 08:10:38,983 - INFO - Model n_layer: 4
+2025-05-03 08:10:38,983 - INFO - Model n_embd: 256
+2025-05-03 08:10:38,984 - INFO - Model vocabulary size: 16000
+2025-05-03 08:10:38,984 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 08:10:38,984 - INFO - Güvenli maksimum uzunluk: 78
+2025-05-03 08:10:38,984 - INFO - Model başarıyla yüklendi
+2025-05-03 08:10:38,985 - INFO - Cihaz: cpu
+2025-05-03 08:10:38,985 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 08:10:38,991 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 08:10:39,096 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 08:10:50,929 - INFO - Girdi token sayısı: 31
+2025-05-03 08:10:50,929 - INFO - Güvenli token sayısı: 100
+2025-05-03 08:10:52,606 - INFO - Ham model yanıtı: # # # kullanıcı : merhaba # # # sistem : bu cevabı türkçe olarak yanıtla, doğru ve tam bilgiler v...
+2025-05-03 08:10:52,607 - INFO - Üretim süresi: 1.68 saniye
+2025-05-03 09:52:18,312 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 09:52:18,313 - INFO - Model yükleniyor: C:\Users\omere\Desktop\CREATEDBYTURKEY\laptop_model_plus\final_model_20250503_094258
+2025-05-03 09:52:18,394 - INFO - Tokenizer yükleniyor: C:\Users\omere\Desktop\CREATEDBYTURKEY\laptop_model_plus\final_model_20250503_094258
+2025-05-03 09:52:18,419 - INFO - BOS token ayarlanıyor
+2025-05-03 09:52:18,420 - INFO - Model yükleniyor: C:\Users\omere\Desktop\CREATEDBYTURKEY\laptop_model_plus\final_model_20250503_094258
+2025-05-03 09:52:18,454 - INFO - Kullanılabilir sistem belleği: 9.98 GB
+2025-05-03 09:52:24,190 - ERROR - Model yüklenirken hata: Unable to load weights from pytorch checkpoint file for 'C:\Users\omere\Desktop\CREATEDBYTURKEY\laptop_model_plus\final_model_20250503_094258\pytorch_model.bin' at 'C:\Users\omere\Desktop\CREATEDBYTURKEY\laptop_model_plus\final_model_20250503_094258\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 09:52:24,191 - INFO - Basit yükleme stratejisi deneniyor...
+2025-05-03 09:52:24,222 - ERROR - Basit yükleme de başarısız: Unable to load weights from pytorch checkpoint file for 'C:\Users\omere\Desktop\CREATEDBYTURKEY\laptop_model_plus\final_model_20250503_094258\pytorch_model.bin' at 'C:\Users\omere\Desktop\CREATEDBYTURKEY\laptop_model_plus\final_model_20250503_094258\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 09:52:24,222 - WARNING - Model yüklenemedi, alternatif olarak manuel model oluşturuluyor
+2025-05-03 09:52:24,224 - INFO - Manuel GPT2 konfigürasyonu oluşturuluyor
+2025-05-03 09:52:24,224 - INFO - Boş model oluşturuluyor
+2025-05-03 09:52:24,361 - INFO - Model max_position_embeddings: 128
+2025-05-03 09:52:24,362 - INFO - Model n_ctx: 64
+2025-05-03 09:52:24,362 - INFO - Model n_positions: 128
+2025-05-03 09:52:24,362 - INFO - Model n_layer: 3
+2025-05-03 09:52:24,363 - INFO - Model n_embd: 128
+2025-05-03 09:52:24,363 - INFO - Model vocabulary size: 16000
+2025-05-03 09:52:24,363 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 09:52:24,364 - INFO - Güvenli maksimum uzunluk: 14
+2025-05-03 09:52:24,365 - INFO - Model başarıyla yüklendi
+2025-05-03 09:52:24,365 - INFO - Cihaz: cpu
+2025-05-03 09:52:24,366 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 09:52:24,372 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 09:52:24,495 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 09:52:24,497 - INFO - Girdi token sayısı: 50
+2025-05-03 09:52:24,498 - INFO - Güvenli token sayısı: 68
+2025-05-03 09:52:25,389 - INFO - Ham model yanıtı: # # # kullanıcı : merhaba, türkçe modelim nasıl çalışıyor? # # # sistem : bu cevabı türkçe ola...
+2025-05-03 09:52:25,390 - INFO - Üretim süresi: 0.89 saniye
+2025-05-03 09:52:27,757 - INFO - Girdi token sayısı: 41
+2025-05-03 09:52:27,758 - INFO - Güvenli token sayısı: 77
+2025-05-03 09:52:28,791 - INFO - Ham model yanıtı: # # # kullanıcı : merhaba # # # sistem : bu cevabı türkçe olarak yanıtla, doğru ve tam bilgiler v...
+2025-05-03 09:52:28,791 - INFO - Üretim süresi: 1.03 saniye
+2025-05-03 09:52:40,586 - INFO - Girdi token sayısı: 64
+2025-05-03 09:52:40,586 - INFO - Güvenli token sayısı: 54
+2025-05-03 09:52:41,315 - INFO - Ham model yanıtı: # # # kullanıcı : [ kullanici ] merhaba [ yapay _ zeka ] # # # kullanıcı : # # # sistem : bu cevabı ...
+2025-05-03 09:52:41,316 - INFO - Üretim süresi: 0.73 saniye
+2025-05-03 09:52:49,144 - INFO - Girdi token sayısı: 64
+2025-05-03 09:52:49,145 - INFO - Güvenli token sayısı: 54
+2025-05-03 09:52:49,886 - INFO - Ham model yanıtı: # # # kullanıcı : [ kullanici ] merhaba [ yapay _ zeka ] # # # kullanıcı : # # # sistem : bu cevabı ...
+2025-05-03 09:52:49,887 - INFO - Üretim süresi: 0.74 saniye
+2025-05-03 09:52:59,720 - INFO - Girdi token sayısı: 64
+2025-05-03 09:52:59,721 - INFO - Güvenli token sayısı: 54
+2025-05-03 09:53:00,445 - INFO - Ham model yanıtı: # # # kullanıcı : [ kullanici ] merhaba [ yapay _ zeka ] # # # kullanıcı : # # # sistem : bu cevabı ...
+2025-05-03 09:53:00,446 - INFO - Üretim süresi: 0.72 saniye
+2025-05-03 09:59:26,091 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 09:59:26,092 - INFO - Model yükleniyor: model_final
+2025-05-03 09:59:26,093 - INFO - Model yolu bulunamadı: model_final, alternatifler aranıyor
+2025-05-03 09:59:26,096 - WARNING - Hiçbir model bulunamadı, orijinal yol kullanılacak: model_final
+2025-05-03 09:59:26,146 - INFO - Tokenizer yükleniyor: model_final
+2025-05-03 09:59:27,767 - ERROR - Ana tokenizer yüklenemedi: model_final is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-03 09:59:27,768 - INFO - Alternatif tokenizer yükleme stratejisi deneniyor...
+2025-05-03 09:59:27,768 - ERROR - Alternatif tokenizer da yüklenemedi: [WinError 3] Sistem belirtilen yolu bulamıyor: 'model_final'
+2025-05-03 09:59:27,769 - ERROR - Model yüklenirken hata: Tokenizer yüklenemedi
+2025-05-03 09:59:27,804 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_http.py", line 409, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/model_final/resolve/main/tokenizer_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 424, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        local_files_only=local_files_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<14 lines>...
+        force_download=force_download,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1596, in _raise_on_head_call_error
+    raise head_call_error
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1484, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url, proxies=proxies, timeout=etag_timeout, headers=headers, token=token
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1401, in get_hf_file_metadata
+    r = _request_wrapper(
+        method="HEAD",
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 285, in _request_wrapper
+    response = _request_wrapper(
+        method=method,
+    ...<2 lines>...
+        **params,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 309, in _request_wrapper
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_http.py", line 459, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-6815bece-1dce95da7e7a0bb810de6d8d;e2227f92-4220-4c09-8c85-e5d07587034b)
+
+Repository Not Found for url: https://huggingface.co/model_final/resolve/main/tokenizer_config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 118, in _load_model_and_tokenizer
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tokenizer_path,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        trust_remote_code=False
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 946, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 778, in get_tokenizer_config
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<12 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 266, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 456, in cached_files
+    raise OSError(
+    ...<4 lines>...
+    ) from e
+OSError: model_final is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 131, in _load_model_and_tokenizer
+    tokenizer_files = [f for f in os.listdir(tokenizer_path)
+                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] Sistem belirtilen yolu bulamıyor: 'model_final'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 1412, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<6 lines>...
+        safe_mode=args.safe_mode
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 100, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 390, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 143, in _load_model_and_tokenizer
+    raise RuntimeError("Tokenizer yüklenemedi")
+RuntimeError: Tokenizer yüklenemedi
+2025-05-03 10:00:49,463 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 10:00:49,463 - INFO - Model yükleniyor: model_final
+2025-05-03 10:00:49,463 - INFO - Model yolu bulunamadı: model_final, alternatifler aranıyor
+2025-05-03 10:00:49,466 - WARNING - Hiçbir model bulunamadı, orijinal yol kullanılacak: model_final
+2025-05-03 10:00:49,523 - INFO - Tokenizer yükleniyor: model_final
+2025-05-03 10:00:49,825 - ERROR - Ana tokenizer yüklenemedi: model_final is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-03 10:00:49,826 - INFO - Alternatif tokenizer yükleme stratejisi deneniyor...
+2025-05-03 10:00:49,826 - ERROR - Alternatif tokenizer da yüklenemedi: [WinError 3] Sistem belirtilen yolu bulamıyor: 'model_final'
+2025-05-03 10:00:49,827 - ERROR - Model yüklenirken hata: Tokenizer yüklenemedi
+2025-05-03 10:00:49,844 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_http.py", line 409, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/model_final/resolve/main/tokenizer_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 424, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        local_files_only=local_files_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<14 lines>...
+        force_download=force_download,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1596, in _raise_on_head_call_error
+    raise head_call_error
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1484, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url, proxies=proxies, timeout=etag_timeout, headers=headers, token=token
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1401, in get_hf_file_metadata
+    r = _request_wrapper(
+        method="HEAD",
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 285, in _request_wrapper
+    response = _request_wrapper(
+        method=method,
+    ...<2 lines>...
+        **params,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 309, in _request_wrapper
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_http.py", line 459, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-6815bf21-2165acae1414c07c1b531027;5aad7466-f724-4400-8b38-b3d8032901d4)
+
+Repository Not Found for url: https://huggingface.co/model_final/resolve/main/tokenizer_config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 118, in _load_model_and_tokenizer
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tokenizer_path,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        trust_remote_code=False
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 946, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 778, in get_tokenizer_config
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<12 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 266, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 456, in cached_files
+    raise OSError(
+    ...<4 lines>...
+    ) from e
+OSError: model_final is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 131, in _load_model_and_tokenizer
+    tokenizer_files = [f for f in os.listdir(tokenizer_path)
+                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] Sistem belirtilen yolu bulamıyor: 'model_final'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 1412, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<6 lines>...
+        safe_mode=args.safe_mode
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 100, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 390, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 143, in _load_model_and_tokenizer
+    raise RuntimeError("Tokenizer yüklenemedi")
+RuntimeError: Tokenizer yüklenemedi
+2025-05-03 10:01:03,459 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 10:01:03,459 - INFO - Model yükleniyor: model_final
+2025-05-03 10:01:03,459 - INFO - Model yolu bulunamadı: model_final, alternatifler aranıyor
+2025-05-03 10:01:03,462 - WARNING - Hiçbir model bulunamadı, orijinal yol kullanılacak: model_final
+2025-05-03 10:01:03,521 - INFO - Tokenizer yükleniyor: model_final
+2025-05-03 10:01:03,843 - ERROR - Ana tokenizer yüklenemedi: model_final is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-03 10:01:03,843 - INFO - Alternatif tokenizer yükleme stratejisi deneniyor...
+2025-05-03 10:01:03,843 - ERROR - Alternatif tokenizer da yüklenemedi: [WinError 3] Sistem belirtilen yolu bulamıyor: 'model_final'
+2025-05-03 10:01:03,843 - ERROR - Model yüklenirken hata: Tokenizer yüklenemedi
+2025-05-03 10:01:03,850 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_http.py", line 409, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/model_final/resolve/main/tokenizer_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 424, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        local_files_only=local_files_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<14 lines>...
+        force_download=force_download,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1596, in _raise_on_head_call_error
+    raise head_call_error
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1484, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url, proxies=proxies, timeout=etag_timeout, headers=headers, token=token
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1401, in get_hf_file_metadata
+    r = _request_wrapper(
+        method="HEAD",
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 285, in _request_wrapper
+    response = _request_wrapper(
+        method=method,
+    ...<2 lines>...
+        **params,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 309, in _request_wrapper
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_http.py", line 459, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-6815bf2f-02b6d4f92041280c08051c91;588c57ff-4579-487e-84b8-ce6d91274f42)
+
+Repository Not Found for url: https://huggingface.co/model_final/resolve/main/tokenizer_config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 118, in _load_model_and_tokenizer
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tokenizer_path,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        trust_remote_code=False
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 946, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 778, in get_tokenizer_config
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<12 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 266, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 456, in cached_files
+    raise OSError(
+    ...<4 lines>...
+    ) from e
+OSError: model_final is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 131, in _load_model_and_tokenizer
+    tokenizer_files = [f for f in os.listdir(tokenizer_path)
+                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] Sistem belirtilen yolu bulamıyor: 'model_final'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 1412, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<6 lines>...
+        safe_mode=args.safe_mode
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 100, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 390, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 143, in _load_model_and_tokenizer
+    raise RuntimeError("Tokenizer yüklenemedi")
+RuntimeError: Tokenizer yüklenemedi
+2025-05-03 10:01:10,301 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 10:01:10,301 - INFO - Model yükleniyor: model_final
+2025-05-03 10:01:10,302 - INFO - Model yolu bulunamadı: model_final, alternatifler aranıyor
+2025-05-03 10:01:10,304 - WARNING - Hiçbir model bulunamadı, orijinal yol kullanılacak: model_final
+2025-05-03 10:01:10,357 - INFO - Tokenizer yükleniyor: model_final
+2025-05-03 10:01:10,659 - ERROR - Ana tokenizer yüklenemedi: model_final is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-03 10:01:10,660 - INFO - Alternatif tokenizer yükleme stratejisi deneniyor...
+2025-05-03 10:01:10,660 - ERROR - Alternatif tokenizer da yüklenemedi: [WinError 3] Sistem belirtilen yolu bulamıyor: 'model_final'
+2025-05-03 10:01:10,660 - ERROR - Model yüklenirken hata: Tokenizer yüklenemedi
+2025-05-03 10:01:10,667 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_http.py", line 409, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/model_final/resolve/main/tokenizer_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 424, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        local_files_only=local_files_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<14 lines>...
+        force_download=force_download,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1596, in _raise_on_head_call_error
+    raise head_call_error
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1484, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url, proxies=proxies, timeout=etag_timeout, headers=headers, token=token
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1401, in get_hf_file_metadata
+    r = _request_wrapper(
+        method="HEAD",
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 285, in _request_wrapper
+    response = _request_wrapper(
+        method=method,
+    ...<2 lines>...
+        **params,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 309, in _request_wrapper
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_http.py", line 459, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-6815bf36-580d13ec196046cb7373ffaf;93f7b78f-e8f0-4241-8891-128f6c610069)
+
+Repository Not Found for url: https://huggingface.co/model_final/resolve/main/tokenizer_config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 118, in _load_model_and_tokenizer
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tokenizer_path,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        trust_remote_code=False
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 946, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 778, in get_tokenizer_config
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<12 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 266, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\hub.py", line 456, in cached_files
+    raise OSError(
+    ...<4 lines>...
+    ) from e
+OSError: model_final is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 131, in _load_model_and_tokenizer
+    tokenizer_files = [f for f in os.listdir(tokenizer_path)
+                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] Sistem belirtilen yolu bulamıyor: 'model_final'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 1412, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<6 lines>...
+        safe_mode=args.safe_mode
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 100, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 390, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 143, in _load_model_and_tokenizer
+    raise RuntimeError("Tokenizer yüklenemedi")
+RuntimeError: Tokenizer yüklenemedi
+2025-05-03 10:03:04,209 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 10:03:04,210 - INFO - Model yükleniyor, tam yol: model_final
+2025-05-03 10:03:04,210 - INFO - Model yükleniyor: model_final
+2025-05-03 10:03:04,210 - INFO - Model yolu tam yola dönüştürüldü: C:\Users\omere\Desktop\CREATEDBYTURKEY\model_final
+2025-05-03 10:03:04,210 - ERROR - Model klasörü bulunamadı: C:\Users\omere\Desktop\CREATEDBYTURKEY\model_final
+2025-05-03 10:03:04,213 - INFO - Alternatif model yolu bulundu: C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608
+2025-05-03 10:03:04,213 - INFO - Model klasörü içeriği:
+2025-05-03 10:03:04,213 - INFO -  - config.json
+2025-05-03 10:03:04,214 - INFO -  - generation_config.json
+2025-05-03 10:03:04,218 - INFO -  - pytorch_model.bin
+2025-05-03 10:03:04,218 - INFO -  - special_tokens_map.json
+2025-05-03 10:03:04,219 - INFO -  - tokenizer.json
+2025-05-03 10:03:04,219 - INFO -  - tokenizer_config.json
+2025-05-03 10:03:04,280 - INFO - Tokenizer yükleniyor: C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608
+2025-05-03 10:03:04,284 - INFO - Model yükleniyor: C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608
+2025-05-03 10:03:06,016 - ERROR - Model yüklenirken hata: Unable to load weights from pytorch checkpoint file for 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin' at 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:03:06,016 - ERROR - Model yüklenirken hata: Model yüklenemedi. Hata: Unable to load weights from pytorch checkpoint file for 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin' at 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:03:06,040 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_utils.py", line 556, in load_state_dict
+    return torch.load(
+           ~~~~~~~~~~^
+        checkpoint_file,
+        ^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **extra_args,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 1516, in load
+    return _load(
+        opened_zipfile,
+    ...<3 lines>...
+        **pickle_load_args,
+    )
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 2114, in _load
+    result = unpickler.load()
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\_weights_only_unpickler.py", line 409, in load
+    result = func(*args)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\_utils.py", line 420, in _rebuild_qtensor
+    tensor = torch._empty_affine_quantized(
+        size,
+    ...<3 lines>...
+        device=storage.device,
+    )
+NotImplementedError: Could not run 'aten::_empty_affine_quantized' with arguments from the 'QuantizedMeta' backend. This could be because the operator doesn't exist for this backend, or was omitted during the selective/custom build process (if using custom build). If you are a Facebook employee using PyTorch on mobile, please visit https://fburl.com/ptmfixes for possible resolutions. 'aten::_empty_affine_quantized' is only available for these backends: [CPU, Meta, QuantizedCPU, BackendSelect, Python, FuncTorchDynamicLayerBackMode, Functionalize, Named, Conjugate, Negative, ZeroTensor, ADInplaceOrView, AutogradOther, AutogradCPU, AutogradCUDA, AutogradHIP, AutogradXLA, AutogradMPS, AutogradIPU, AutogradXPU, AutogradHPU, AutogradVE, AutogradLazy, AutogradMTIA, AutogradPrivateUse1, AutogradPrivateUse2, AutogradPrivateUse3, AutogradMeta, AutogradNestedTensor, Tracer, AutocastCPU, AutocastMTIA, AutocastXPU, AutocastMPS, AutocastCUDA, FuncTorchBatched, BatchedNestedTensor, FuncTorchVmapMode, Batched, VmapMode, FuncTorchGradWrapper, PythonTLSSnapshot, FuncTorchDynamicLayerFrontMode, PreDispatch, PythonDispatcher].
+
+CPU: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\build\aten\src\ATen\RegisterCPU_0.cpp:2621 [kernel]
+Meta: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\core\MetaFallbackKernel.cpp:23 [backend fallback]
+QuantizedCPU: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\build\aten\src\ATen\RegisterQuantizedCPU_0.cpp:343 [kernel]
+BackendSelect: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\build\aten\src\ATen\RegisterBackendSelect.cpp:792 [kernel]
+Python: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\core\PythonFallbackKernel.cpp:194 [backend fallback]
+FuncTorchDynamicLayerBackMode: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\functorch\DynamicLayer.cpp:479 [backend fallback]
+Functionalize: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\FunctionalizeFallbackKernel.cpp:349 [backend fallback]
+Named: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\core\NamedRegistrations.cpp:7 [backend fallback]
+Conjugate: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\ConjugateFallback.cpp:17 [backend fallback]
+Negative: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\NegateFallback.cpp:18 [backend fallback]
+ZeroTensor: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\ZeroTensorFallback.cpp:86 [backend fallback]
+ADInplaceOrView: fallthrough registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\core\VariableFallbackKernel.cpp:100 [backend fallback]
+AutogradOther: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradCPU: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradCUDA: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradHIP: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradXLA: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradMPS: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradIPU: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradXPU: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradHPU: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradVE: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradLazy: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradMTIA: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradPrivateUse1: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradPrivateUse2: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradPrivateUse3: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradMeta: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+AutogradNestedTensor: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\VariableType_3.cpp:19588 [autograd kernel]
+Tracer: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\TraceType_3.cpp:14999 [kernel]
+AutocastCPU: fallthrough registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\autocast_mode.cpp:322 [backend fallback]
+AutocastMTIA: fallthrough registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\autocast_mode.cpp:466 [backend fallback]
+AutocastXPU: fallthrough registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\autocast_mode.cpp:504 [backend fallback]
+AutocastMPS: fallthrough registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\autocast_mode.cpp:209 [backend fallback]
+AutocastCUDA: fallthrough registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\autocast_mode.cpp:165 [backend fallback]
+FuncTorchBatched: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\functorch\LegacyBatchingRegistrations.cpp:731 [backend fallback]
+BatchedNestedTensor: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\functorch\LegacyBatchingRegistrations.cpp:758 [backend fallback]
+FuncTorchVmapMode: fallthrough registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\functorch\VmapModeRegistrations.cpp:27 [backend fallback]
+Batched: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\LegacyBatchingRegistrations.cpp:1075 [backend fallback]
+VmapMode: fallthrough registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\VmapModeRegistrations.cpp:33 [backend fallback]
+FuncTorchGradWrapper: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\functorch\TensorWrapper.cpp:208 [backend fallback]
+PythonTLSSnapshot: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\core\PythonFallbackKernel.cpp:202 [backend fallback]
+FuncTorchDynamicLayerFrontMode: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\functorch\DynamicLayer.cpp:475 [backend fallback]
+PreDispatch: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\core\PythonFallbackKernel.cpp:206 [backend fallback]
+PythonDispatcher: registered at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\core\PythonFallbackKernel.cpp:198 [backend fallback]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_utils.py", line 565, in load_state_dict
+    if f.read(7) == "version":
+       ~~~~~~^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1254.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 1543: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 173, in _load_model_and_tokenizer
+    self.model = AutoModelForCausalLM.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.model_path,
+        ^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        low_cpu_mem_usage=True
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\models\auto\auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_utils.py", line 4399, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model,
+        ^^^^^^
+    ...<13 lines>...
+        weights_only=weights_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_utils.py", line 4638, in _load_pretrained_model
+    load_state_dict(checkpoint_files[0], map_location="meta", weights_only=weights_only).keys()
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_utils.py", line 577, in load_state_dict
+    raise OSError(
+    ...<3 lines>...
+    )
+OSError: Unable to load weights from pytorch checkpoint file for 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin' at 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 1225, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<6 lines>...
+        safe_mode=args.safe_mode
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 104, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 203, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 189, in _load_model_and_tokenizer
+    raise RuntimeError(f"Model yüklenemedi. Hata: {str(model_error)}")
+RuntimeError: Model yüklenemedi. Hata: Unable to load weights from pytorch checkpoint file for 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin' at 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:05:29,556 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 10:05:29,557 - INFO - Model yükleniyor, tam yol: C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608
+2025-05-03 10:05:29,557 - INFO - Model yükleniyor: C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608
+2025-05-03 10:05:29,558 - INFO - Model klasörü içeriği:
+2025-05-03 10:05:29,558 - INFO -  - config.json
+2025-05-03 10:05:29,558 - INFO -  - generation_config.json
+2025-05-03 10:05:29,559 - INFO -  - pytorch_model.bin
+2025-05-03 10:05:29,559 - INFO -  - special_tokens_map.json
+2025-05-03 10:05:29,560 - INFO -  - tokenizer.json
+2025-05-03 10:05:29,560 - INFO -  - tokenizer_config.json
+2025-05-03 10:05:29,624 - INFO - Tokenizer yükleniyor: C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608
+2025-05-03 10:05:29,629 - INFO - Model yükleniyor: C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608
+2025-05-03 10:05:31,503 - ERROR - Model yüklenirken hata: Unable to load weights from pytorch checkpoint file for 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin' at 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:05:31,504 - ERROR - Model yüklenirken hata: Model yüklenemedi. Hata: Unable to load weights from pytorch checkpoint file for 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin' at 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:05:31,514 - ERROR - Model yüklenemedi, varsayılan yanıtlar kullanılacak: Model yüklenemedi. Hata: Unable to load weights from pytorch checkpoint file for 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin' at 'C:\Users\omere\Desktop\CREATEDBYTURKEY\mini_model\final_model_20250503_095608\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:27:27,948 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 10:27:27,949 - INFO - Model yükleniyor: turkce_model\final_model_20250503_102615
+2025-05-03 10:27:28,016 - INFO - Tokenizer yükleniyor: turkce_model\final_model_20250503_102615
+2025-05-03 10:27:28,040 - INFO - BOS token ayarlanıyor
+2025-05-03 10:27:28,041 - INFO - Model yükleniyor: turkce_model\final_model_20250503_102615
+2025-05-03 10:27:28,056 - INFO - Kullanılabilir sistem belleği: 9.56 GB
+2025-05-03 10:27:30,446 - ERROR - Model yüklenirken hata: Unable to load weights from pytorch checkpoint file for 'turkce_model\final_model_20250503_102615\pytorch_model.bin' at 'turkce_model\final_model_20250503_102615\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:27:30,446 - INFO - Basit yükleme stratejisi deneniyor...
+2025-05-03 10:27:30,575 - ERROR - Basit yükleme de başarısız: Unable to load weights from pytorch checkpoint file for 'turkce_model\final_model_20250503_102615\pytorch_model.bin' at 'turkce_model\final_model_20250503_102615\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:27:30,576 - WARNING - Model yüklenemedi, alternatif olarak manuel model oluşturuluyor
+2025-05-03 10:27:30,577 - INFO - Manuel GPT2 konfigürasyonu oluşturuluyor
+2025-05-03 10:27:30,577 - INFO - Boş model oluşturuluyor
+2025-05-03 10:27:30,608 - INFO - Model max_position_embeddings: 64
+2025-05-03 10:27:30,608 - INFO - Model n_ctx: 32
+2025-05-03 10:27:30,609 - INFO - Model n_positions: 64
+2025-05-03 10:27:30,609 - INFO - Model n_layer: 2
+2025-05-03 10:27:30,609 - INFO - Model n_embd: 64
+2025-05-03 10:27:30,609 - INFO - Model vocabulary size: 8000
+2025-05-03 10:27:30,610 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 10:27:30,610 - INFO - Güvenli maksimum uzunluk: -18
+2025-05-03 10:27:30,610 - ERROR - Model yüklenirken hata: `max_new_tokens` must be greater than 0, but is -18.
+2025-05-03 10:27:30,616 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 1412, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<6 lines>...
+        safe_mode=args.safe_mode
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 100, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 390, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 364, in _load_model_and_tokenizer
+    self.generation_config = GenerationConfig(
+                             ~~~~~~~~~~~~~~~~^
+        max_new_tokens=safe_max_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        use_cache=True
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\generation\configuration_utils.py", line 512, in __init__
+    self.validate(is_init=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\generation\configuration_utils.py", line 607, in validate
+    raise ValueError(f"`max_new_tokens` must be greater than 0, but is {self.max_new_tokens}.")
+ValueError: `max_new_tokens` must be greater than 0, but is -18.
+2025-05-03 10:27:46,080 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 10:27:46,081 - INFO - Güvenli mod aktif: Model yükleme ve bellek optimizasyonları uygulanıyor
+2025-05-03 10:27:46,150 - INFO - Model yükleniyor: turkce_model\final_model_20250503_102615
+2025-05-03 10:27:46,206 - INFO - Tokenizer yükleniyor: turkce_model\final_model_20250503_102615
+2025-05-03 10:27:46,210 - INFO - BOS token ayarlanıyor
+2025-05-03 10:27:46,210 - INFO - Model yükleniyor: turkce_model\final_model_20250503_102615
+2025-05-03 10:27:46,224 - INFO - Kullanılabilir sistem belleği: 9.51 GB
+2025-05-03 10:27:48,540 - ERROR - Model yüklenirken hata: Unable to load weights from pytorch checkpoint file for 'turkce_model\final_model_20250503_102615\pytorch_model.bin' at 'turkce_model\final_model_20250503_102615\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:27:48,540 - INFO - Basit yükleme stratejisi deneniyor...
+2025-05-03 10:27:48,657 - ERROR - Basit yükleme de başarısız: Unable to load weights from pytorch checkpoint file for 'turkce_model\final_model_20250503_102615\pytorch_model.bin' at 'turkce_model\final_model_20250503_102615\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:27:48,657 - WARNING - Model yüklenemedi, alternatif olarak manuel model oluşturuluyor
+2025-05-03 10:27:48,658 - INFO - Manuel GPT2 konfigürasyonu oluşturuluyor
+2025-05-03 10:27:48,658 - INFO - Boş model oluşturuluyor
+2025-05-03 10:27:48,680 - INFO - Model max_position_embeddings: 64
+2025-05-03 10:27:48,681 - INFO - Model n_ctx: 32
+2025-05-03 10:27:48,682 - INFO - Model n_positions: 64
+2025-05-03 10:27:48,682 - INFO - Model n_layer: 2
+2025-05-03 10:27:48,682 - INFO - Model n_embd: 64
+2025-05-03 10:27:48,683 - INFO - Model vocabulary size: 8000
+2025-05-03 10:27:48,683 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 10:27:48,684 - INFO - Güvenli maksimum uzunluk: -18
+2025-05-03 10:27:48,684 - ERROR - Model yüklenirken hata: `max_new_tokens` must be greater than 0, but is -18.
+2025-05-03 10:27:48,691 - ERROR - Beklenmeyen hata
+Traceback (most recent call last):
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 1412, in main
+    model_user = TurkceModelKullanici(
+        model_path=args.model,
+    ...<6 lines>...
+        safe_mode=args.safe_mode
+    )
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 100, in __init__
+    self._load_model_and_tokenizer()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 390, in _load_model_and_tokenizer
+    raise e
+  File "C:\Users\omere\Desktop\CREATEDBYTURKEY\turkce_model_kullanici.py", line 364, in _load_model_and_tokenizer
+    self.generation_config = GenerationConfig(
+                             ~~~~~~~~~~~~~~~~^
+        max_new_tokens=safe_max_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        use_cache=True
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\generation\configuration_utils.py", line 512, in __init__
+    self.validate(is_init=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\omere\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\generation\configuration_utils.py", line 607, in validate
+    raise ValueError(f"`max_new_tokens` must be greater than 0, but is {self.max_new_tokens}.")
+ValueError: `max_new_tokens` must be greater than 0, but is -18.
+2025-05-03 10:28:16,626 - INFO - CPU optimizasyonu: 11 thread kullanılıyor
+2025-05-03 10:28:16,626 - INFO - Güvenli mod aktif: Model yükleme ve bellek optimizasyonları uygulanıyor
+2025-05-03 10:28:16,687 - INFO - Model yükleniyor: turkce_model\final_model_20250503_102615
+2025-05-03 10:28:16,740 - INFO - Tokenizer yükleniyor: turkce_model\final_model_20250503_102615
+2025-05-03 10:28:16,743 - INFO - BOS token ayarlanıyor
+2025-05-03 10:28:16,743 - INFO - Model yükleniyor: turkce_model\final_model_20250503_102615
+2025-05-03 10:28:16,757 - INFO - Kullanılabilir sistem belleği: 9.52 GB
+2025-05-03 10:28:18,456 - ERROR - Model yüklenirken hata: Unable to load weights from pytorch checkpoint file for 'turkce_model\final_model_20250503_102615\pytorch_model.bin' at 'turkce_model\final_model_20250503_102615\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:28:18,456 - INFO - Basit yükleme stratejisi deneniyor...
+2025-05-03 10:28:18,559 - ERROR - Basit yükleme de başarısız: Unable to load weights from pytorch checkpoint file for 'turkce_model\final_model_20250503_102615\pytorch_model.bin' at 'turkce_model\final_model_20250503_102615\pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+2025-05-03 10:28:18,559 - WARNING - Model yüklenemedi, alternatif olarak manuel model oluşturuluyor
+2025-05-03 10:28:18,560 - INFO - Manuel GPT2 konfigürasyonu oluşturuluyor
+2025-05-03 10:28:18,560 - INFO - Boş model oluşturuluyor
+2025-05-03 10:28:18,573 - INFO - Model max_position_embeddings: 64
+2025-05-03 10:28:18,574 - INFO - Model n_ctx: 32
+2025-05-03 10:28:18,574 - INFO - Model n_positions: 64
+2025-05-03 10:28:18,574 - INFO - Model n_layer: 2
+2025-05-03 10:28:18,575 - INFO - Model n_embd: 64
+2025-05-03 10:28:18,575 - INFO - Model vocabulary size: 8000
+2025-05-03 10:28:18,575 - WARNING - EOS token ID bulunamadı, 0 kullanılıyor
+2025-05-03 10:28:18,575 - INFO - Güvenli maksimum uzunluk: 10
+2025-05-03 10:28:18,575 - INFO - Model başarıyla yüklendi
+2025-05-03 10:28:18,576 - INFO - Cihaz: cpu
+2025-05-03 10:28:18,576 - INFO - Model ön ısıtma yapılıyor...
+2025-05-03 10:28:18,578 - INFO - Model ısıtma işlemi başladı...
+2025-05-03 10:28:18,628 - INFO - Model ısıtma işlemi tamamlandı
+2025-05-03 10:28:18,630 - INFO - Girdi token sayısı: 32
+2025-05-03 10:28:18,630 - WARNING - Girdi çok uzun (32 token), 14 token'a kısaltılıyor
+2025-05-03 10:28:18,631 - INFO - Kısaltılmış girdi token sayısı: 14
+2025-05-03 10:28:18,631 - INFO - Güvenli token sayısı: 40
+2025-05-03 10:28:18,749 - INFO - Ham model yanıtı: kullanıcı merhab 2...
+2025-05-03 10:28:18,750 - INFO - Standart yanıt kullanılıyor: kullanıcı merhab 2
+2025-05-03 10:28:18,750 - INFO - Üretim süresi: 0.12 saniye
